@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Counter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptK-sd-jFR">
+                                <rect key="frame" x="397" y="469" width="140" height="30"/>
+                                <state key="normal" title="+">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="increment" destination="BYZ-38-t0r" eventType="touchUpInside" id="sYw-HW-ok0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYB-TR-ZAa">
+                                <rect key="frame" x="62" y="469" width="140" height="30"/>
+                                <state key="normal" title="-">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="decrement" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lh3-UQ-BiG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Otx-mD-dg1">
+                                <rect key="frame" x="277" y="469" width="40" height="30"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset" destination="BYZ-38-t0r" eventType="touchUpInside" id="dLi-Ut-zyV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCO-NQ-ULe">
+                                <rect key="frame" x="228" y="141" width="144" height="64"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pCO-NQ-ULe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="120" id="8hI-Vu-bwp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Otx-mD-dg1" secondAttribute="bottom" constant="101" id="CjD-uG-S64"/>
+                            <constraint firstItem="ptK-sd-jFR" firstAttribute="leading" secondItem="Otx-mD-dg1" secondAttribute="trailing" constant="10" id="En9-rm-ZCs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ptK-sd-jFR" secondAttribute="bottom" constant="101" id="HAU-4a-ZXN"/>
+                            <constraint firstItem="Otx-mD-dg1" firstAttribute="leading" secondItem="BYB-TR-ZAa" secondAttribute="trailing" constant="10" id="IRv-E9-h1w"/>
+                            <constraint firstItem="pCO-NQ-ULe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="165" id="JCJ-23-v3T"/>
+                            <constraint firstItem="Otx-mD-dg1" firstAttribute="top" secondItem="pCO-NQ-ULe" secondAttribute="bottom" constant="264" id="MB5-AU-jRq"/>
+                            <constraint firstItem="BYB-TR-ZAa" firstAttribute="width" secondItem="Otx-mD-dg1" secondAttribute="width" id="NBF-Sw-7zh"/>
+                            <constraint firstItem="pCO-NQ-ULe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="Ofm-X7-qId"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ptK-sd-jFR" secondAttribute="trailing" constant="10" id="PQ6-pz-26d"/>
+                            <constraint firstItem="Otx-mD-dg1" firstAttribute="top" secondItem="pCO-NQ-ULe" secondAttribute="bottom" constant="263" id="ZfG-K7-3xG"/>
+                            <constraint firstItem="BYB-TR-ZAa" firstAttribute="height" secondItem="Otx-mD-dg1" secondAttribute="height" id="iCX-98-g7H"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BYB-TR-ZAa" secondAttribute="bottom" constant="101" id="jGq-tj-gVA"/>
+                            <constraint firstItem="BYB-TR-ZAa" firstAttribute="height" secondItem="ptK-sd-jFR" secondAttribute="height" id="q2O-VV-Bux"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pCO-NQ-ULe" secondAttribute="trailing" constant="100" id="q6G-Ux-5cB"/>
+                            <constraint firstItem="BYB-TR-ZAa" firstAttribute="width" secondItem="ptK-sd-jFR" secondAttribute="width" id="u9c-o5-BXN"/>
+                            <constraint firstItem="BYB-TR-ZAa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="vkZ-0V-sw0"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8hI-Vu-bwp"/>
+                                <exclude reference="ZfG-K7-3xG"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="countLabel" destination="pCO-NQ-ULe" id="XO7-pI-eAg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="375" y="336"/>
+        </scene>
+    </scenes>
+</document>
