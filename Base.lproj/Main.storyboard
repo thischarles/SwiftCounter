@@ -27,7 +27,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYB-TR-ZAa">
-                                <rect key="frame" x="62" y="469" width="140" height="30"/>
+                                <rect key="frame" x="61" y="469" width="140" height="30"/>
                                 <state key="normal" title="-">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -36,7 +36,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Otx-mD-dg1">
-                                <rect key="frame" x="277" y="469" width="40" height="30"/>
+                                <rect key="frame" x="280" y="469" width="40" height="30"/>
                                 <state key="normal" title="Reset">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -45,7 +45,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCO-NQ-ULe">
-                                <rect key="frame" x="228" y="141" width="144" height="64"/>
+                                <rect key="frame" x="16" y="268" width="568" height="64"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="72"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -53,23 +53,24 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="BYB-TR-ZAa" firstAttribute="width" secondItem="ptK-sd-jFR" secondAttribute="width" id="0X3-jg-ny4"/>
+                            <constraint firstAttribute="centerY" secondItem="BYB-TR-ZAa" secondAttribute="centerY" constant="-184" id="0dC-CZ-5Qf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BYB-TR-ZAa" secondAttribute="bottom" constant="101" id="4VP-3D-GHk"/>
+                            <constraint firstAttribute="centerY" secondItem="pCO-NQ-ULe" secondAttribute="centerY" id="712-p6-rNa"/>
                             <constraint firstItem="pCO-NQ-ULe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="120" id="8hI-Vu-bwp"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Otx-mD-dg1" secondAttribute="bottom" constant="101" id="CjD-uG-S64"/>
-                            <constraint firstItem="ptK-sd-jFR" firstAttribute="leading" secondItem="Otx-mD-dg1" secondAttribute="trailing" constant="10" id="En9-rm-ZCs"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ptK-sd-jFR" secondAttribute="bottom" constant="101" id="HAU-4a-ZXN"/>
-                            <constraint firstItem="Otx-mD-dg1" firstAttribute="leading" secondItem="BYB-TR-ZAa" secondAttribute="trailing" constant="10" id="IRv-E9-h1w"/>
-                            <constraint firstItem="pCO-NQ-ULe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="165" id="JCJ-23-v3T"/>
-                            <constraint firstItem="Otx-mD-dg1" firstAttribute="top" secondItem="pCO-NQ-ULe" secondAttribute="bottom" constant="264" id="MB5-AU-jRq"/>
-                            <constraint firstItem="BYB-TR-ZAa" firstAttribute="width" secondItem="Otx-mD-dg1" secondAttribute="width" id="NBF-Sw-7zh"/>
-                            <constraint firstItem="pCO-NQ-ULe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="Ofm-X7-qId"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ptK-sd-jFR" secondAttribute="trailing" constant="10" id="PQ6-pz-26d"/>
+                            <constraint firstAttribute="centerX" secondItem="pCO-NQ-ULe" secondAttribute="centerX" id="AOn-OR-dAy"/>
+                            <constraint firstItem="BYB-TR-ZAa" firstAttribute="height" secondItem="ptK-sd-jFR" secondAttribute="height" id="Cwa-yt-ccz"/>
+                            <constraint firstItem="Otx-mD-dg1" firstAttribute="leading" secondItem="BYB-TR-ZAa" secondAttribute="trailing" constant="79" id="D8Z-na-3UY"/>
+                            <constraint firstItem="BYB-TR-ZAa" firstAttribute="height" secondItem="Otx-mD-dg1" secondAttribute="height" id="LdK-V0-hhP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ptK-sd-jFR" secondAttribute="bottom" constant="101" id="R1f-u2-tyw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Otx-mD-dg1" secondAttribute="bottom" constant="101" id="Rlz-ZN-Gjz"/>
+                            <constraint firstAttribute="centerY" secondItem="ptK-sd-jFR" secondAttribute="centerY" constant="-184" id="SDO-0T-va0"/>
                             <constraint firstItem="Otx-mD-dg1" firstAttribute="top" secondItem="pCO-NQ-ULe" secondAttribute="bottom" constant="263" id="ZfG-K7-3xG"/>
-                            <constraint firstItem="BYB-TR-ZAa" firstAttribute="height" secondItem="Otx-mD-dg1" secondAttribute="height" id="iCX-98-g7H"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BYB-TR-ZAa" secondAttribute="bottom" constant="101" id="jGq-tj-gVA"/>
-                            <constraint firstItem="BYB-TR-ZAa" firstAttribute="height" secondItem="ptK-sd-jFR" secondAttribute="height" id="q2O-VV-Bux"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="pCO-NQ-ULe" secondAttribute="trailing" constant="100" id="q6G-Ux-5cB"/>
-                            <constraint firstItem="BYB-TR-ZAa" firstAttribute="width" secondItem="ptK-sd-jFR" secondAttribute="width" id="u9c-o5-BXN"/>
-                            <constraint firstItem="BYB-TR-ZAa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="vkZ-0V-sw0"/>
+                            <constraint firstItem="BYB-TR-ZAa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="45" id="Zg8-8W-oQm"/>
+                            <constraint firstAttribute="centerY" secondItem="Otx-mD-dg1" secondAttribute="centerY" constant="-184" id="jpV-E7-8i1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ptK-sd-jFR" secondAttribute="trailing" constant="47" id="kgr-Wz-5Jp"/>
+                            <constraint firstItem="BYB-TR-ZAa" firstAttribute="width" secondItem="Otx-mD-dg1" secondAttribute="width" id="p1d-lF-iq7"/>
+                            <constraint firstItem="ptK-sd-jFR" firstAttribute="leading" secondItem="Otx-mD-dg1" secondAttribute="trailing" constant="77" id="ywh-dx-oP2"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
