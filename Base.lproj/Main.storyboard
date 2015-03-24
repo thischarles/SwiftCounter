@@ -17,31 +17,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptK-sd-jFR">
-                                <rect key="frame" x="397" y="469" width="140" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptK-sd-jFR">
+                                <rect key="frame" x="398" y="469" width="140" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="+">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="increment" destination="BYZ-38-t0r" eventType="touchUpInside" id="sYw-HW-ok0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYB-TR-ZAa">
-                                <rect key="frame" x="61" y="469" width="140" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYB-TR-ZAa">
+                                <rect key="frame" x="62" y="469" width="140" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="-">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="decrement" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lh3-UQ-BiG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Otx-mD-dg1">
-                                <rect key="frame" x="280" y="469" width="40" height="30"/>
-                                <state key="normal" title="Reset">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="reset" destination="BYZ-38-t0r" eventType="touchUpInside" id="dLi-Ut-zyV"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCO-NQ-ULe">
@@ -50,32 +44,54 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Otx-mD-dg1">
+                                <rect key="frame" x="280" y="469" width="40" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset" destination="BYZ-38-t0r" eventType="touchUpInside" id="dLi-Ut-zyV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="BYB-TR-ZAa" firstAttribute="width" secondItem="ptK-sd-jFR" secondAttribute="width" id="0X3-jg-ny4"/>
-                            <constraint firstAttribute="centerY" secondItem="BYB-TR-ZAa" secondAttribute="centerY" constant="-184" id="0dC-CZ-5Qf"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BYB-TR-ZAa" secondAttribute="bottom" constant="101" id="4VP-3D-GHk"/>
-                            <constraint firstAttribute="centerY" secondItem="pCO-NQ-ULe" secondAttribute="centerY" id="712-p6-rNa"/>
+                            <constraint firstItem="BYB-TR-ZAa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="46" id="3jj-G3-7yb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Otx-mD-dg1" secondAttribute="bottom" constant="101" id="67q-4B-Tm0"/>
+                            <constraint firstItem="BYB-TR-ZAa" firstAttribute="width" secondItem="Otx-mD-dg1" secondAttribute="width" id="7B6-iw-b5u"/>
                             <constraint firstItem="pCO-NQ-ULe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="120" id="8hI-Vu-bwp"/>
-                            <constraint firstAttribute="centerX" secondItem="pCO-NQ-ULe" secondAttribute="centerX" id="AOn-OR-dAy"/>
-                            <constraint firstItem="BYB-TR-ZAa" firstAttribute="height" secondItem="ptK-sd-jFR" secondAttribute="height" id="Cwa-yt-ccz"/>
-                            <constraint firstItem="Otx-mD-dg1" firstAttribute="leading" secondItem="BYB-TR-ZAa" secondAttribute="trailing" constant="79" id="D8Z-na-3UY"/>
-                            <constraint firstItem="BYB-TR-ZAa" firstAttribute="height" secondItem="Otx-mD-dg1" secondAttribute="height" id="LdK-V0-hhP"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ptK-sd-jFR" secondAttribute="bottom" constant="101" id="R1f-u2-tyw"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Otx-mD-dg1" secondAttribute="bottom" constant="101" id="Rlz-ZN-Gjz"/>
-                            <constraint firstAttribute="centerY" secondItem="ptK-sd-jFR" secondAttribute="centerY" constant="-184" id="SDO-0T-va0"/>
+                            <constraint firstItem="ptK-sd-jFR" firstAttribute="leading" secondItem="Otx-mD-dg1" secondAttribute="trailing" constant="77" id="9bH-Lj-adA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ptK-sd-jFR" secondAttribute="trailing" constant="46" id="9qF-V5-CPl"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ptK-sd-jFR" secondAttribute="bottom" constant="101" id="BrK-lb-dxW"/>
+                            <constraint firstAttribute="centerX" secondItem="pCO-NQ-ULe" secondAttribute="centerX" id="DW5-nF-UOT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BYB-TR-ZAa" secondAttribute="bottom" constant="101" id="E3q-bI-CHx"/>
+                            <constraint firstItem="BYB-TR-ZAa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="46" id="HHx-D1-BfT"/>
+                            <constraint firstItem="BYB-TR-ZAa" firstAttribute="width" secondItem="ptK-sd-jFR" secondAttribute="width" id="I5m-VV-QNx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ptK-sd-jFR" secondAttribute="trailing" constant="46" id="Uxt-4B-Bzq"/>
+                            <constraint firstItem="BYB-TR-ZAa" firstAttribute="width" secondItem="ptK-sd-jFR" secondAttribute="width" id="YlJ-dV-gen"/>
                             <constraint firstItem="Otx-mD-dg1" firstAttribute="top" secondItem="pCO-NQ-ULe" secondAttribute="bottom" constant="263" id="ZfG-K7-3xG"/>
-                            <constraint firstItem="BYB-TR-ZAa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="45" id="Zg8-8W-oQm"/>
-                            <constraint firstAttribute="centerY" secondItem="Otx-mD-dg1" secondAttribute="centerY" constant="-184" id="jpV-E7-8i1"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ptK-sd-jFR" secondAttribute="trailing" constant="47" id="kgr-Wz-5Jp"/>
-                            <constraint firstItem="BYB-TR-ZAa" firstAttribute="width" secondItem="Otx-mD-dg1" secondAttribute="width" id="p1d-lF-iq7"/>
-                            <constraint firstItem="ptK-sd-jFR" firstAttribute="leading" secondItem="Otx-mD-dg1" secondAttribute="trailing" constant="77" id="ywh-dx-oP2"/>
+                            <constraint firstItem="BYB-TR-ZAa" firstAttribute="height" secondItem="Otx-mD-dg1" secondAttribute="height" id="apa-FU-mmq"/>
+                            <constraint firstItem="BYB-TR-ZAa" firstAttribute="height" secondItem="ptK-sd-jFR" secondAttribute="height" id="caR-NC-9hu"/>
+                            <constraint firstAttribute="centerY" secondItem="pCO-NQ-ULe" secondAttribute="centerY" id="gb3-tJ-2yA"/>
+                            <constraint firstItem="BYB-TR-ZAa" firstAttribute="height" secondItem="ptK-sd-jFR" secondAttribute="height" id="jfe-PJ-Znl"/>
+                            <constraint firstItem="Otx-mD-dg1" firstAttribute="leading" secondItem="BYB-TR-ZAa" secondAttribute="trailing" constant="8" id="ttn-Jo-MRY"/>
+                            <constraint firstItem="ptK-sd-jFR" firstAttribute="leading" secondItem="Otx-mD-dg1" secondAttribute="trailing" constant="8" id="u1Z-6q-i3H"/>
+                            <constraint firstItem="Otx-mD-dg1" firstAttribute="leading" secondItem="BYB-TR-ZAa" secondAttribute="trailing" constant="79" id="vET-Y0-YMF"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="8hI-Vu-bwp"/>
+                                <exclude reference="3jj-G3-7yb"/>
+                                <exclude reference="7B6-iw-b5u"/>
+                                <exclude reference="I5m-VV-QNx"/>
+                                <exclude reference="apa-FU-mmq"/>
+                                <exclude reference="jfe-PJ-Znl"/>
                                 <exclude reference="ZfG-K7-3xG"/>
+                                <exclude reference="vET-Y0-YMF"/>
+                                <exclude reference="9bH-Lj-adA"/>
+                                <exclude reference="Uxt-4B-Bzq"/>
                             </mask>
                         </variation>
                     </view>
